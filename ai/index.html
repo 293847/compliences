@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Export Compliance Checklist</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Export Compliance Checklist</h1>
+        <p>Streamline your cross-border transactions and ensure compliance with AI-powered assistance.</p>
+    </header>
+
+    <main>
+        <section>
+            <form id="complianceForm">
+                <label for="country">Your Country</label>
+                <select id="country" name="country" required>
+                    <option value="">Select Country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Germany">Germany</option>
+                    <option value="China">China</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Japan">Japan</option>
+                    <!-- Add more countries as required -->
+                </select>
+
+                <label for="targetMarket">Target Market</label>
+                <select id="targetMarket" name="targetMarket" required>
+                    <option value="">Select Target Market</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Germany">Germany</option>
+                    <option value="UK">UK</option>
+                    <option value="EU">European Union</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Japan">Japan</option>
+                    <!-- Add more target markets as required -->
+                </select>
+
+                <label for="productType">Product Type</label>
+                <input type="text" id="productType" name="productType" required>
+
+                <label for="governmentIncentive">Government Incentives</label>
+                <input type="text" id="governmentIncentive" name="governmentIncentive">
+
+                <button type="submit">Generate Checklist</button>
+            </form>
+        </section>
+
+        <section id="checklistDisplay">
+            <h2>Your Compliance Checklist</h2>
+            <div id="checklistContent">
+                <!-- Generated compliance checklist will appear here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Export Compliance Tool</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
